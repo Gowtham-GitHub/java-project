@@ -1,14 +1,14 @@
 pipeline { 
-    agent { label 'Main' } 
+    agent { label 'Master' } 
     stages { 
          stage ("SCM Chkout-1"){ 
               steps { 
-                   git 'https://github.com/Gowtham-GitHub/java-project' 
+                   git 'https://github.com/Vishwanathms/Java-Proj1' 
               } 
          } 
          stage ("Java execute"){ 
               steps { 
-                   sh label: ''' script: '''javac *.java java Simple''' 
+                   sh label: '', script: '''javac *.java java Simple''' 
               } 
          } 
     } 
