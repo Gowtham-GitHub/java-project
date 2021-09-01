@@ -6,7 +6,7 @@ pipeline {
                    git 'https://github.com/Gowtham-GitHub/java-project' 
               } 
          } 
-         stage ("Java execute"){ 
+         stage ("java execute"){ 
               steps { 
                    sh label: '', script: '''javac *.java java Simple''' 
               } 
