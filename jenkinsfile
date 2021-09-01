@@ -1,5 +1,5 @@
 pipeline { 
-    agent { label 'Main' } 
+    agent { any } 
     stages { 
          stage ("SCM Chkout-1"){ 
               steps { 
